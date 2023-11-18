@@ -56,6 +56,7 @@ cn_preprocessor_modules = {
     "hed_safe": hed_safe,
     "mediapipe_face": mediapipe_face,
     "mlsd": mlsd,
+    "elsed": elsed,
     "normal_map": midas_normal,
     "openpose": functools.partial(g_openpose_model.run_model, include_body=True, include_hand=False, include_face=False),
     "openpose_hand": functools.partial(g_openpose_model.run_model, include_body=True, include_hand=True, include_face=False),

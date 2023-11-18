@@ -238,6 +238,7 @@ simple_control_types = {
     "Normal": "normal_bae",
     "OpenPose": "openpose_full",
     "MLSD": "mlsd",
+    "ELSED": "elsed",
     "Lineart": "lineart_standard (from white bg & black line)",
     "SoftEdge": "softedge_pidinet",
     "Scribble": "scribble_pidinet",

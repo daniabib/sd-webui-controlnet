@@ -170,6 +170,11 @@ def unload_mlsd():
 
 model_midas = None
 
+def elsed(img, res=512, thr_a=65.0, thr_b=0.5, **kwargs):
+    img, remove_pad = resize_image_with_pad(img, res)
+    from annotator.elsed import apply_elsed
+    result = apply_elsed(img, thr_a, thr_b)
+    return remove_pad(result), True
 
 def midas(img, res=512, a=np.pi * 2.0, **kwargs):
     img, remove_pad = resize_image_with_pad(img, res)
